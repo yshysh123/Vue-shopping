@@ -1,6 +1,6 @@
 # shopping
 
-> A Vue.js project
+> Vue2.0+Vue-router+Vuex打造商城购物网站
 
 ## Build Setup
 
