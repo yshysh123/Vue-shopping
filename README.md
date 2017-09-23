@@ -2,6 +2,9 @@
 
 > Vue2.0+Vue-router+Vuex打造商城购物网站
 
+主要功能：
+
+
 ## Build Setup
 
 ``` bash
@@ -15,7 +18,7 @@ npm run dev
 npm run build
 
 # build for production and view the bundle analyzer report
-npm run build --report
+npm run build
 ```
 
 For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
