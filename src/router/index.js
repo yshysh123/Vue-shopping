@@ -35,6 +35,11 @@ export default new Router({
       component: Item
     },
     {
+      path: '/phone',
+      name: 'Shop',
+      component: Shop
+    },
+    {
       path: '/cart',
       name: 'Cart',
       component: Cart

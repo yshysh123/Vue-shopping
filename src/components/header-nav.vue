@@ -45,7 +45,9 @@
 				<div class="container">
 					<ul class="nav-list">
 						<li><a href="javascript:;">首页</a></li>
-						<li><a href="javascript:;">手机</a></li>
+						<router-link to="/phone" exact tag="li" activeClass="active">
+						    <a>手机</a>
+						</router-link>
 						<li><a href="javascript:;">“足迹系列”手感膜</a></li>
 						<router-link to="/" exact tag="li" activeClass="active">
 						    <a>官方配件</a>

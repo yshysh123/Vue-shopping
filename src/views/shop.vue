@@ -11,7 +11,7 @@
 			</div>
 			<div class="gray-box">
 				<div class="item-box">
-					<shop-item key="index" v-for="item,index in goodsList" :item="item"></shop-item>
+					<shop-item key="index" v-for="item,index in goodsShow" :item="item"></shop-item>
 				</div>
 			</div>
 		</div>
@@ -27,8 +27,15 @@ import prompt from '@/components/prompt'
 export default {
   data () {
     return {
-      goodsList: goodData
+      goodsList: goodData,
+      goodsShow: []
     }
+  },
+  watch:{
+    "$route": 'reseat'
+  },
+  mounted(){
+      this.reseat()
   },
   components: {
     shopItem,
@@ -37,6 +44,15 @@ export default {
   computed: {
     maxCount () {
       return this.$store.state.maxOff
+    }
+  },
+  methods:{
+      reseat(){
+      if(this.$route.path == '/phone'){
+          this.goodsShow = this.goodsList[1];
+      }else{
+          this.goodsShow = this.goodsList[0];
+      }
     }
   }
 }
